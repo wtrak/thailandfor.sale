@@ -7,6 +7,8 @@
   <meta name="description" content="Explore property opportunities in Thailand. Discover Koh Samui homes, villas, and resorts for sale and learn how to invest wisely." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://thailandfor.sale/" />
+  <link rel="preconnect" href="https://kohsamui.investments">
+  <link rel="dns-prefetch" href="https://kohsamui.investments">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Thailand For Sale • Koh Samui" />
@@ -58,21 +60,46 @@
     <div class="badge">ThailandFor<span style="opacity:.7">.sale</span></div>
 
     <div class="card" role="region" aria-label="Thailand for sale intro">
-      <h1>Thailand For Sale</h1>
+      <h1>See What’s For Sale in Koh Samui</h1>
       <p>Villas, resorts, condos, and land—Thailand property is attracting global buyers. Koh Samui stands out with international demand, rental yields, and lifestyle appeal.</p>
       <p style="opacity:.9">Learn how to evaluate real opportunities and connect with vetted local experts for the best results.</p>
-      <a class="cta" href="https://kohsamui.investments/?utm_source=thailandfor.sale&utm_medium=referral&utm_campaign=cta">
-  Learn more &nbsp;→
-</a>
 
+      <a class="cta" href="https://kohsamui.investments/?utm_source=thailandfor.sale&utm_medium=referral&utm_campaign=cta">
+        View available properties &nbsp;→
+      </a>
+      <p style="font-size:13px;opacity:.85;margin-top:10px">Private intake • No spam • Expert-vetted listings</p>
+
+      <p style="margin-top:10px">
+        <a class="cta" style="background:transparent;border-color:rgba(255,255,255,.35)"
+           href="https://kohsamui.investments/guide.html?utm_source=thailandfor.sale&utm_medium=referral&utm_campaign=soft">
+          Preview the investment guide &nbsp;→
+        </a>
+      </p>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function(){
+          const cta = document.querySelector('.cta');
+          if(!cta) return;
+          cta.addEventListener('click', function(){
+            try {
+              gtag('event', 'cta_click', {
+                event_category: 'engagement',
+                event_label: 'thailandfor.sale_primary',
+                value: 1
+              });
+            } catch(e){}
+          });
+        });
+      </script>
     </div>
 
     <div class="foot">
-  Private intake • No spam • HTTPS secure
-  <div style="font-size:11px;opacity:.6;margin-top:4px">
-    <a href="/faq" style="color:#aaa;text-decoration:none">FAQ</a> • 
-    <a href="/guide" style="color:#aaa;text-decoration:none">Guide</a>
+      Private intake • No spam • HTTPS secure
+      <div style="font-size:11px;opacity:.6;margin-top:4px">
+        <a href="/faq" style="color:#aaa;text-decoration:none">FAQ</a> • 
+        <a href="/guide" style="color:#aaa;text-decoration:none">Guide</a>
+      </div>
+    </div>
   </div>
-</div>
 </body>
 </html>
